@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #090909;
+    background-color: #f7f6fa;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #afa8e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: #594db3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .instructions {
+    margin-top: 30px;
+    color: #555555;
+    text-align: left;
+  }
+  
+  .instructions h3 {
+    margin-bottom: 10px;
+  }
+  
+  .instructions p {
+    margin: 5px 0;
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 20px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .custom-file-upload,
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .instructions {
+      font-size: 14px;
+    }
+  
+    .instructions p {
+      margin: 3px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+       max-width: 350px;
+      padding: 20px 15px;
+    }
+  
+    h1 {
+      font-size: 25px;
+    }
+  
+    .custom-file-upload,
+    button {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  
+    .instructions {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+      font-size: 12px;
+    }
+  
+    .instructions h3 {
+      font-size: 14px;
+    }
+  
+    .instructions p {
+        
+      margin: 2px 0;
+    }
+  }
+  
